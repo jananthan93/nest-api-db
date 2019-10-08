@@ -16,4 +16,14 @@ export class PostsController {
         return await this.postsService.findPostById(id);
     }
 
+
+    @Put(':id')
+    updatePostById(@Param('id')id , @Body() createPostDto:CreatePostDto):string{
+        return  `updated id:${id}`;
+    }
+
+    @Delete(':id')
+    deletePostById(@Param('id')id) :string{
+        return `deleted id:${id}`;
+    }
 }
