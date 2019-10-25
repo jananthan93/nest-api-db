@@ -1,5 +1,4 @@
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { BooksEntity } from "../books/books.entity";
 
 const config= TypeOrmModule.forRoot({
   type: 'postgres',
@@ -11,7 +10,6 @@ const config= TypeOrmModule.forRoot({
   database: 'nest',
   entities: ['dist/**/*.entity{.ts,.js}'],
   // entities: [BooksEntity],
-//
   synchronize: true,
 })
 export default config;

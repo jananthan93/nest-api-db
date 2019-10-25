@@ -1,0 +1,5 @@
+npm i class-transformer class-validator  ----for validation
+npm i @nestjs/passport passport passport-local -----for authentication
+npm i -dev @types/passport-local--- dev dependency
+npm i @nestjs/typeorm typeorm pg -----for database connection and orm
+npm i bcrypt ---for token
