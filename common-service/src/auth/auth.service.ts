@@ -17,10 +17,10 @@ export class AuthService {
       });
     }
     public signup(authCredencialDto:AuthCredentialDto){
-         return this.client.send<AuthCredentialDto>('signup',authCredencialDto)
-         
-      }
-      public getHello(str:string){
-        return this.client.send<string,string>('str',str)
-      }
+        return this.client.send<AuthCredentialDto>('signup',authCredencialDto)
+        
+    }
+    public getHello(str:string){
+      return this.client.send<string,string>('str',str)
+    }
 }
