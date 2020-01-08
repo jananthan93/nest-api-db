@@ -5,6 +5,8 @@ post-service/dist
 post-service/node_modules
 common-service/dist
 common-service/node_modules
+/dist
+/node_modules
 # Logs
 logs
 *.log
